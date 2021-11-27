@@ -1,13 +1,13 @@
-package hackathon.postdata.pl.HTT;
+package jaz.lab06.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HttApplication {
+public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HttApplication.class, args);
+		SpringApplication.run(DemoApplication.class, args);
 	}
 
 }
