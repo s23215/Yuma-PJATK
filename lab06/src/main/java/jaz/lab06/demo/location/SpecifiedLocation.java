@@ -4,49 +4,23 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class SpecifiedLocation {
 
-    @JsonProperty("lat")
-    private int lat;
-
-    @JsonProperty("ing")
-    private int ing;
-
-    @JsonProperty("StreetNumber")
     private int streetNumber;
 
-    @JsonProperty("Street")
     private String street;
 
-    @JsonProperty("PostalCode")
     private String postalCode;
 
-    @JsonProperty("City")
     private String city;
 
-    @JsonProperty("IsNormalized")
     private boolean isNormalised;
 
-    @JsonProperty("OpenTime")
-    private String openTime;
-
-    @JsonProperty("CloseTime")
     private String closeTime;
 
+    private String openTime;
 
-    public int getLat() {
-        return lat;
-    }
+    private int lat;
 
-    public void setLat(int lat) {
-        this.lat = lat;
-    }
-
-    public int getIng() {
-        return ing;
-    }
-
-    public void setIng(int ing) {
-        this.ing = ing;
-    }
+    private int lng;
 
     public int getStreetNumber() {
         return streetNumber;
@@ -88,6 +62,14 @@ public class SpecifiedLocation {
         isNormalised = normalised;
     }
 
+    public String getCloseTime() {
+        return closeTime;
+    }
+
+    public void setCloseTime(String closeTime) {
+        this.closeTime = closeTime;
+    }
+
     public String getOpenTime() {
         return openTime;
     }
@@ -96,11 +78,19 @@ public class SpecifiedLocation {
         this.openTime = openTime;
     }
 
-    public String getCloseTime() {
-        return closeTime;
+    public int getLat() {
+        return lat;
     }
 
-    public void setCloseTime(String closeTime) {
-        this.closeTime = closeTime;
+    public void setLat(int lat) {
+        this.lat = lat;
+    }
+
+    public int getLng() {
+        return lng;
+    }
+
+    public void setLng(int lng) {
+        this.lng = lng;
     }
 }

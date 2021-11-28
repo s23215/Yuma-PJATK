@@ -29,12 +29,6 @@ public class Location {
     @JsonProperty("IsNormalized")
     private boolean isNormalised;
 
-    @JsonProperty("OpenTime")
-    private String openTime;
-
-    @JsonProperty("CloseTime")
-    private String closeTime;
-
     public int getId() {
         return id;
     }
@@ -81,21 +75,5 @@ public class Location {
 
     public void setNormalised(boolean normalised) {
         isNormalised = normalised;
-    }
-
-    public String getOpenTime() {
-        return openTime;
-    }
-
-    public void setOpenTime(String openTime) {
-        this.openTime = openTime;
-    }
-
-    public String getCloseTime() {
-        return closeTime;
-    }
-
-    public void setCloseTime(String closeTime) {
-        this.closeTime = closeTime;
     }
 }
